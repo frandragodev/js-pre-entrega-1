@@ -1,7 +1,7 @@
 
 function sortingHat() {
 
-    alert("Juego del Sombrero Seleccionador de Hogwarts.\n¿A qué casa perteneces?\nTendrás que elegir un número del 1 al 4 para saberlo.");
+    alert("Juego del Sombrero Seleccionador de Hogwarts.\n¿A qué casa perteneces?");
 
     let userName;
     while (!userName) {
@@ -76,12 +76,17 @@ function sortingHat() {
     }
 
     alert("Hmm, difícil. Esto es MUY difícil.");
+    console.log("Hmm, difícil. Esto es MUY difícil.");
     alert("Veo que tienes coraje, y una mente muy valiosa.");
+    console.log("Veo que tienes coraje, y una mente muy valiosa.");
     alert("Hay talento, sí. Y veo una sed de probarte a ti mismo.");
+    console.log("Hay talento, sí. Y veo una sed de probarte a ti mismo.");
     alert("¿Pero, dónde ponerte?...");
+    console.log("¿Pero, dónde ponerte?...");
     alert("...YA SÉ!");
-    alert("Te pondré en..." + randomHouse.toUpperCase() + "!")
-    console.log("El Sombrero Seleccionador decidió que tu casa tu casa es" + " " + randomHouse)
+    console.log("...YA SÉ!");
+    alert("Te pondré en..." + randomHouse.toUpperCase() + "!");
+    console.log("Te pondré en..." + randomHouse.toUpperCase() + "!");
 
 }
 
