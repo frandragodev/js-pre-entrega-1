@@ -13,11 +13,15 @@ function sortingHat() {
 
     console.log("Estudiante de Hogwarts:" + " " + userName);
 
-    let userNumber;
-    while (!userNumber) {
+    let userNumber = null;
+    while (true) {
         userNumber = parseInt(prompt(userName + ", soy el Sombrero Seleccionador.\n¿Quieres saber a qué casa de Hogwarts perteneces, verdad?\nElije un número del 1 al 4, y veré cuál es tu destino...\nMis respuestas nunca serán las mismas, no podrás engañarme..."));
-        if (!userNumber) {
+        if (isNaN(userNumber)) {
             alert("Debes ingresar un número. Recuerda, del 1 al 4.");
+        } else if (userNumber >= 1 && userNumber <= 4) {
+            break;
+        } else {
+            alert("Vuelve a intentarlo.\nDebes ingresar un número del 1 al 4.");
         }
     }
 
@@ -58,7 +62,7 @@ function sortingHat() {
         } else {
             randomHouse = "Slytherin 🐍";
         }
-    } else if (userNumber === 4) {
+    } else (userNumber === 4); {
         const randomNumber = Math.floor(Math.random() * 4) + 1;
         if (randomNumber === 1) {
             randomHouse = "Gryffindor 🦁";
@@ -69,10 +73,6 @@ function sortingHat() {
         } else {
             randomHouse = "Slytherin 🐍";
         }
-    } else {
-        alert(`Vuelve a intentarlo.
-        Debes ingresar un número del 1 al 4`);
-        return;
     }
 
     alert("Hmm, difícil. Esto es MUY difícil.");
